@@ -1,0 +1,68 @@
+<!--
+  Generated template for the AddQPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>AddQPage</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding style="background-color: darkslategrey">
+
+  <h1 style="color: white; font-weight: bolder;"> ADD Question: </h1>
+
+  <ion-item>
+    <ion-label position="floating">Question</ion-label>
+    <ion-input required [(ngModel)]="item.question"></ion-input>
+  </ion-item>
+
+  <ion-row style="height: 10px"></ion-row>
+
+  <!-- <ion-item>
+    <ion-label position="floating">QuestionID</ion-label>
+    <ion-input required [(ngModel)]="item.qid"></ion-input>
+  </ion-item>
+
+  <ion-row style="height: 10px"></ion-row> -->
+
+  <ion-item>
+    <ion-label position="floating">Hint</ion-label>
+    <ion-input required [(ngModel)]="item.hint"></ion-input>
+  </ion-item>
+
+  <ion-row style="height: 10px"></ion-row>
+
+  <ion-item>
+    <ion-label position="floating">Type</ion-label>
+    <ion-input required [(ngModel)]="item.type"></ion-input>
+  </ion-item>
+
+  <ion-row style="height: 10px"></ion-row>
+
+  <ion-item>
+    <ion-label position="floating">Phase</ion-label>
+    <ion-input required [(ngModel)]="item.phase"></ion-input>
+  </ion-item>
+
+  <ion-row style="height: 10px"></ion-row>
+  <h1 style="color: white; font-weight: bolder;"> ADD Answer: </h1>
+
+  <ion-item>
+    <ion-label position="floating">Answer</ion-label>
+    <ion-input required [(ngModel)]="item2.answer"></ion-input>
+  </ion-item>
+
+  <ion-row style="height: 10px"></ion-row>
+
+  <ion-item>
+    <ion-label position="floating">QuestionID</ion-label>
+    <ion-input required [(ngModel)]="item2.qid"></ion-input>
+  </ion-item>
+
+  <button ion-button (click)="addtoDb()" style="margin-top: 30px; ">Add</button>
+  <!-- <button ion-button (click)="addAnsToDb()" style="margin-top: 30px;"> Add Answer </button> -->
+
+</ion-content>

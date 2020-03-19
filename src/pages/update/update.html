@@ -1,0 +1,60 @@
+<!--
+  Generated template for the UpdatePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+  <ion-navbar color="secondary">
+    <ion-title>Update Question</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding style="background-color: darkslategrey">
+
+  <h1 style="color: white; font-weight: bolder;"> ADD Question: </h1>
+
+  <ion-item>
+    <ion-input [(ngModel)]="item.question" placeholder="Question"></ion-input>
+  </ion-item>
+
+  <ion-row style="height: 10px"></ion-row>
+
+  <ion-item>
+    <ion-input type="number" [(ngModel)]="item.qid"  placeholder="QuestionID"></ion-input>
+  </ion-item>
+
+  <ion-row style="height: 10px"></ion-row>
+
+  <ion-item>
+    <ion-input [(ngModel)]="item.hint" placeholder="Hint"></ion-input>
+  </ion-item>
+
+  <ion-row style="height: 10px"></ion-row>
+
+  <ion-item>
+    <ion-input type="number" [(ngModel)]="item.type" placeholder="Type"></ion-input>
+  </ion-item>
+
+  <ion-row style="height: 10px"></ion-row>
+
+  <ion-item>
+    <ion-input type="number" [(ngModel)]="item.phase" placeholder="Phase"></ion-input>
+  </ion-item>
+
+  <!-- <ion-row style="height: 10px"></ion-row>
+  <h1 style="color: white; font-weight: bolder;"> ADD Answer: </h1>
+
+  <ion-item>
+    <ion-input [(ngModel)]="item2.answer" placeholder="Answer"></ion-input>
+  </ion-item>
+
+  <ion-row style="height: 10px"></ion-row>
+
+  <ion-item>
+    <ion-input [(ngModel)]="item2.qid" placeholder="QuestionID"></ion-input>
+  </ion-item> -->
+
+  <button ion-button class="but" (click)="updateQ(item)" style="margin-top: 30px; ">Update</button>
+
+</ion-content>
